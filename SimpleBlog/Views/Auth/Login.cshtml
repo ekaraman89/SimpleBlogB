@@ -1,10 +1,30 @@
-﻿
+﻿@model SimpleBlog.ViewModels.AuthLogin
+
 @{
-    Layout = "~/views/shared/_layout.cshtml";
-    ViewBag.title = "login";
+    ViewBag.Title = "Login Page";
+}
+<h1>This is login page of our blog site!</h1>
+
+The test value comes from Controller Action : @Model.Test
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(p=>p.Username)
+        @Html.EditorFor(p => p.Username)
+    </div>
+
+    <div>
+        @Html.LabelFor(p => p.Password)
+        @Html.EditorFor(p => p.Password)
+    </div>
+
+    <input type="submit" />
 }
 
-<!DOCTYPE html>
 
-
-Login Page
+@section TopBar{
+    <h3>
+        <font color="red">This content is from Login View Topbar section</font>
+    </h3>
+}

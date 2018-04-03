@@ -1,7 +1,7 @@
 ﻿
-
-@{ 
+@{
     Layout = null;
+
 }
 
 <!DOCTYPE html>
@@ -9,31 +9,27 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title> @ViewBag.Title - Simple Blog </title>
+    <title>@ViewBag.Title - Simple Blog</title>
 </head>
 <body>
-    <header>
-
-        <h1>
-            <a href="@Url.RouteUrl("home")">Simple Blog</a>
-      
-        </h1>
-
-        <h3>
-            <a href="@Url.RouteUrl("Home")">Home</a> | <a href="@Url.RouteUrl("Login")">Login</a>
-
-        </h3>
-    </header>
-
-    @RenderBody()
-
    
-    <footer>
 
-        &copy; @DateTime.Now.Year - Me
-    </footer>
-
-    @RenderSection("scripts", false)
+    <img src="https://www.trakya.edu.tr/admin/tools/theme/www_v2/images/logo/tr/logo.png" />
+    <h1>This is our SimpleBlog Project</h1>
+    @Html.RouteLink("Home Page","Home") | @Html.RouteLink("Login Page","Login") | @Html.RouteLink("Product List","List")
+   
     
+    @RenderBody()
+    @RenderSection("TopBar", false)
+
+    <br />
+    This web page is under construction
+     
+    @ViewBag.ABCD
+    <footer>
+        &copy; - @DateTime.Now.Year - Me
+    </footer>
+  
+    @RenderSection("Scripts",false)
 </body>
 </html>

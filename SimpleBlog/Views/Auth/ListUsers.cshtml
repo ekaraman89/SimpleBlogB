@@ -1,0 +1,9 @@
+﻿@model SimpleBlog.ViewModels.AuthListUser
+
+<ul>
+    @foreach (SimpleBlog.ViewModels.AuthLogin a in Model.Users)
+    {
+        <li>@a.Username - @a.Password</li>
+    }
+
+</ul>

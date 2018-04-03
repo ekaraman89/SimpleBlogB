@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SimpleBlog.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,31 @@ namespace SimpleBlog.Controllers
 {
     public class AuthController : Controller
     {
+
         public ActionResult login()
         {
-            return View();
+            return View(new AuthLogin() { Test="DENEME" + DateTime.Now.ToString()});
+        }
+
+        [HttpPost]
+        public ActionResult login(AuthLogin form)
+        {
+            return Content("Our form data : " + form.Username + "-" + form.Password);
+        }
+
+        public ActionResult listusers()
+        {
+            return View(
+                new AuthListUser() {
+                    Users = new List<AuthLogin>() {
+                        new AuthLogin() {Username="Cem",Password="123"},
+                        new AuthLogin() {Username="a",Password="123a"},
+                        new AuthLogin() {Username="b",Password="123b"},
+                        new AuthLogin() {Username="c",Password="123c"},
+                        new AuthLogin() {Username="d",Password="123d"},
+
+                    }
+            });
         }
     }
 }

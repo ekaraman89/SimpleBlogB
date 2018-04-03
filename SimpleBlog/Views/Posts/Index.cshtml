@@ -1,18 +1,20 @@
-﻿
-@{
-    Layout = "~/views/shared/_layout.cshtml";
-    ViewBag.title = "index";
-    
-    }
+﻿@{ 
+    ViewBag.Title = "Home Page";
+    SqlConnection cn = new SqlConnection();
+}
+<h1>Posts Index</h1>
 
-<!DOCTYPE html>
 
-İndex Page
-
-@section scripts{
+@section Scripts{
     <script>
         alert("hi");
+    </script>
+}
+@{ 
+    SqlConnection cn2 = new SqlConnection();
+}
 
-</script>
-    }
+@section TopBar{
+    <h3>Top bar section content</h3>    
+}
 
