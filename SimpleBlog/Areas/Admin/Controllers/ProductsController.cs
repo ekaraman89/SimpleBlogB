@@ -6,12 +6,14 @@ using System.Web.Mvc;
 
 namespace SimpleBlog.Areas.Admin.Controllers
 {
-    public class ProductsController : Controller
+    [Authorize(Roles = "Admin")]
+
+public class ProductsController : Controller
     {
         
         public ActionResult Index()
         {
-            return Content("Product Controller Index Action Result");
+            return Content("Admin posts");
         }
 
         
