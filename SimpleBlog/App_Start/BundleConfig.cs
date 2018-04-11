@@ -19,6 +19,8 @@ namespace SimpleBlog.App_Start
                 .Include("~/content/Styles/bootstrap.css")
                 .Include("~/content/Styles/Site.css"));
 
+            
+
         }
     }
 }
