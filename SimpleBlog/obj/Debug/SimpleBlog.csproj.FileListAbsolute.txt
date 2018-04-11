@@ -262,6 +262,7 @@ C:\Users\msert\Documents\SimpleBlogB\SimpleBlog\bin\WebGrease.dll
 C:\Users\msert\Documents\SimpleBlogB\SimpleBlog\bin\Antlr3.Runtime.pdb
 C:\Users\msert\Documents\SimpleBlogB\SimpleBlog\bin\Newtonsoft.Json.xml
 C:\Users\msert\Documents\SimpleBlogB\SimpleBlog\bin\System.Web.Optimization.xml
+<<<<<<< HEAD
 =======
 C:\Users\EmRaH\Desktop\sertac\SimpleBlogB\SimpleBlog\bin\ApplicationInsights.config
 C:\Users\EmRaH\Desktop\sertac\SimpleBlogB\SimpleBlog\bin\SimpleBlog.dll.config
@@ -436,3 +437,6 @@ C:\Users\EmRaH\Desktop\emo\SimpleBlogB\SimpleBlog\obj\Debug\SimpleBlog.csproj.Co
 C:\Users\EmRaH\Desktop\emo\SimpleBlogB\SimpleBlog\obj\Debug\SimpleBlog.dll
 C:\Users\EmRaH\Desktop\emo\SimpleBlogB\SimpleBlog\obj\Debug\SimpleBlog.pdb
 >>>>>>> master
+=======
+C:\Users\msert\Documents\SimpleBlogB\SimpleBlog\obj\Debug\SimpleBlog.csprojResolveAssemblyReference.cache
+>>>>>>> a4b9975c9ed2e473484591df97675e5f3a534dd7
