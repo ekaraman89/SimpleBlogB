@@ -261,3 +261,4 @@ C:\Users\msert\Documents\SimpleBlogB\SimpleBlog\bin\WebGrease.dll
 C:\Users\msert\Documents\SimpleBlogB\SimpleBlog\bin\Antlr3.Runtime.pdb
 C:\Users\msert\Documents\SimpleBlogB\SimpleBlog\bin\Newtonsoft.Json.xml
 C:\Users\msert\Documents\SimpleBlogB\SimpleBlog\bin\System.Web.Optimization.xml
+C:\Users\msert\Documents\SimpleBlogB\SimpleBlog\obj\Debug\SimpleBlog.csprojResolveAssemblyReference.cache
