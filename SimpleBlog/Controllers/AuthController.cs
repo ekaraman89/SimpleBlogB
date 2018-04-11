@@ -13,7 +13,11 @@ namespace SimpleBlog.Controllers
 
         public ActionResult login()
         {
+<<<<<<< HEAD
+            return View(new AuthLogin() { Test = "DENEME" + DateTime.Now.ToString()});
+=======
             return View(new AuthLogin() { Test = "DENEME" + DateTime.Now.ToString() });
+>>>>>>> master
         }
 
         [HttpPost]
@@ -27,10 +31,15 @@ namespace SimpleBlog.Controllers
 
             FormsAuthentication.SetAuthCookie(form.Username, true);
             if (!string.IsNullOrWhiteSpace(ReturnUrl))
+<<<<<<< HEAD
+                       return Redirect(ReturnUrl);
+                      return RedirectToRoute("Home");
+=======
                 return Redirect(ReturnUrl);
 
             return RedirectToRoute("Home");
             //return Content("Our form data : " + form.Username + "-" + form.Password);
+>>>>>>> master
         }
 
         public ActionResult listusers()

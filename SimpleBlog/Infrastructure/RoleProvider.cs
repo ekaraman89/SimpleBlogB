@@ -36,11 +36,20 @@ namespace SimpleBlog.Infrastructure
 
         public override string[] GetRolesForUser(string username)
         {
+<<<<<<< HEAD
+            if (username == "thyranom")
+            {
+                return new string[]{ "admin" };
+            }
+            return new string[]{};
+
+=======
             if (username=="root")
             {
                 return new string[] { "admin" };
             }
             return new string[] { };
+>>>>>>> master
         }
 
         public override string[] GetUsersInRole(string roleName)
