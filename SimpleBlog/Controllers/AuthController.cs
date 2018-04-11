@@ -13,7 +13,11 @@ namespace SimpleBlog.Controllers
 
         public ActionResult login()
         {
+<<<<<<< HEAD
             return View(new AuthLogin() { Test = "DENEME" + DateTime.Now.ToString()});
+=======
+            return View(new AuthLogin() { Test = "DENEME" + DateTime.Now.ToString() });
+>>>>>>> master
         }
 
         [HttpPost]
@@ -27,14 +31,22 @@ namespace SimpleBlog.Controllers
 
             FormsAuthentication.SetAuthCookie(form.Username, true);
             if (!string.IsNullOrWhiteSpace(ReturnUrl))
+<<<<<<< HEAD
                        return Redirect(ReturnUrl);
                       return RedirectToRoute("Home");
+=======
+                return Redirect(ReturnUrl);
+
+            return RedirectToRoute("Home");
+            //return Content("Our form data : " + form.Username + "-" + form.Password);
+>>>>>>> master
         }
 
         public ActionResult listusers()
         {
             return View(
-                new AuthListUser() {
+                new AuthListUser()
+                {
                     Users = new List<AuthLogin>() {
                         new AuthLogin() {Username="Cem",Password="123"},
                         new AuthLogin() {Username="a",Password="123a"},
@@ -43,7 +55,7 @@ namespace SimpleBlog.Controllers
                         new AuthLogin() {Username="d",Password="123d"},
 
                     }
-            });
+                });
         }
     }
 }
